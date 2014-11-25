@@ -23,6 +23,12 @@ var protagonist = {
     y: 2,
 };
 
+var key_place = {
+	element: key,
+	x: 3,
+	y; 3,
+};
+
 // Map utilities
 
 function get_terrain_cell(x, y) {

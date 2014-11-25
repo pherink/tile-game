@@ -35,7 +35,7 @@ function key_pressed_down(event) {
         }
     }
     // Here is where the pickup conditional must be added, if key is present add 1 to inventory before moving character
-    if occupants[key.y][key.x] {
+    if occupants[key_place.y][key_place.x] {
     	key_count = key_count + 1;
     }
     occupants[protagonist.y][protagonist.x] = protagonist.element;
