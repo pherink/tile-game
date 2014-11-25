@@ -26,7 +26,7 @@ var protagonist = {
 var key_place = {
 	element: key,
 	x: 3,
-	y; 3,
+	y: 3,
 };
 
 // Map utilities
