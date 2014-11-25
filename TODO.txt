@@ -1,0 +1,4 @@
+TODO list:
+
+1. Allow user to select character (1 of 4)
+2. 
