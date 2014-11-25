@@ -1,6 +1,10 @@
 "use strict"; // This line chooses a JavaScript dialect, one that helps both jsLint (used in OrionHub) and browsers catch errors.
 /*jslint browser: true*/ // This line tells jsLint that the code will run in a browser.
 
+// Inventory
+var key_count = 0;
+var gem_count = 0;
+
 // Interaction
 
 var left_arrow_key = 37;
@@ -30,7 +34,11 @@ function key_pressed_down(event) {
             protagonist.y = protagonist.y + 1;
         }
     }
-    occupants[protagonist.y][protagonist.x] = protagonist.element;
+    // Here is where the pickup conditional must be added, if key is present add 1 to inventory before moving character
+    if occupants[key.y][key.x] {
+    	key_count = key_count + 1;
+    	occupants[protagonist.y][protagonist.x] = protagonist.element;
+    }
     render();
 }
 
