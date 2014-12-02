@@ -21,26 +21,26 @@ var occupants = [
 ];
 var protagonist = {
     element: cat_girl,
-    x: 3,
-    y: 3,
+    x: 2,
+    y: 2,
 };
 
 var key_place = {
 	element: key,
-	x: 4,
-	y: 4,
+	x: 1,
+	y: 1,
 };
 
 var selector_place = {
 	element: selector,
-	x: 5,
-	y: 4,
+	x: 0,
+	y: 1,
 };
 
 var gem_place = {
 	element: gem,
-	x: 1,
-	y: 1,
+	x: 3,
+	y: 3,
 };
 
 // Map utilities
