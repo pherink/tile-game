@@ -3,30 +3,44 @@
 
 // Initial map
 
-var row_count = 4;
-var column_count = 4;
+var row_count = 5;
+var column_count = 5;
 var terrain = [
-    [[grass], [grass], [grass], [grass]],
-    [[grass], [grass], [grass, wood], [grass]],
-    [[grass], [grass, plain], [grass], [grass]],
-    [[grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass, wood], [grass], [grass]],
+    [[grass], [grass, plain], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass], [grass]],
+    [[grass], [grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-    [undefined, undefined, undefined, undefined],
-    [undefined, key, undefined, undefined],
-    [undefined, undefined, cat_girl, undefined],
-    [undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined, undefined],
+    [selector, key, undefined, undefined, undefined],
+    [undefined, undefined, cat_girl, undefined, undefined],
+    [undefined, undefined, undefined, gem, undefined],
+    [undefined, undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
     element: cat_girl,
-    x: 2,
-    y: 2,
+    x: 3,
+    y: 3,
 };
 
 var key_place = {
 	element: key,
-	x: 3,
-	y: 3,
+	x: 4,
+	y: 4,
+};
+
+var selector_place = {
+	element: selector,
+	x: 5,
+	y: 4,
+};
+
+var gem_place = {
+	element: gem,
+	x: 1,
+	y: 1,
 };
 
 // Map utilities
