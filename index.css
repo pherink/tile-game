@@ -19,6 +19,7 @@ img.asset {
     display: none;
 }
 .inventory{
+  color: #FFFFFF;
 	position:absolute;
 	left:0;
 	top:0;

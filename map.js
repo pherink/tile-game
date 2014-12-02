@@ -13,11 +13,11 @@ var terrain = [
     [[grass], [grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-    [undefined, undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined, heart],
     [selector, key, undefined, undefined, undefined],
     [undefined, undefined, cat_girl, undefined, undefined],
     [undefined, undefined, undefined, gem, undefined],
-    [undefined, undefined, undefined, undefined, undefined],
+    [enemy, undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
     element: cat_girl,
@@ -41,6 +41,18 @@ var gem_place = {
 	element: gem,
 	x: 3,
 	y: 3,
+};
+
+var enemy_place = {
+	element: enemy,
+	x: 0,
+	y: 4,
+};
+
+var heart_place = {
+	element: heart,
+	x: 4,
+	y: 0,
 };
 
 // Map utilities
