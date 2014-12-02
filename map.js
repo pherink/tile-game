@@ -13,7 +13,7 @@ var terrain = [
     [[grass], [grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-    [undefined, undefined, undefined, undefined, heart],
+    [star, undefined, undefined, undefined, heart],
     [selector, key, undefined, undefined, undefined],
     [undefined, undefined, cat_girl, undefined, undefined],
     [undefined, undefined, undefined, gem, undefined],
@@ -47,6 +47,12 @@ var enemy_place = {
 	element: enemy,
 	x: 0,
 	y: 4,
+};
+
+var star_place = {
+	element: star,
+	x: 0,
+	y: 0,
 };
 
 var heart_place = {
