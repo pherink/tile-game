@@ -18,3 +18,9 @@ cite a {
 img.asset {
     display: none;
 }
+.inventory{
+	position:absolute;
+	left:0;
+	top:0;
+	padding:15px 15px;
+}
