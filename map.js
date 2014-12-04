@@ -15,7 +15,7 @@ var terrain = [
 var occupants = [
     [heart, enemy, undefined, wall, gem],
     [enemy, key, undefined, undefined, closed_door],
-    [undefined, undefined, protagonist, undefined, undefined],
+    [undefined, undefined, cat_girl, undefined, undefined],
     [undefined, undefined, undefined, undefined, undefined],
     [selector, undefined, undefined, undefined, star],
 ];
