@@ -55,22 +55,22 @@ function key_pressed_down(event) {
 
 
 function select_cat_girl() {
-	protagonist = document.getElementById('chr_cat_girl');
+	protagonist.element = document.getElementById('chr_cat_girl');
 
 function select_boy() {
-	protagonist = document.getElementById('chr_boy');
+	protagonist.element = document.getElementById('chr_boy');
 	render();
 }
 function select_horn_girl() {
-	protagonist = document.getElementById('chr_horn_girl');
+	protagonist.element = document.getElementById('chr_horn_girl');
 	render();
 }
 function select_princess_girl() {
-	protagonist = document.getElementById('chr_princess_girl');
+	protagonist.element = document.getElementById('chr_princess_girl');
 	render();
 }
 function select_pink_girl() {
-	protagonist = document.getElementById('chr_pink_girl');
+	protagonist.element = document.getElementById('chr_pink_girl');
 	render();
 }
 document.addEventListener('keydown', key_pressed_down());
