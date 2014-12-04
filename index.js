@@ -4,6 +4,7 @@
 // Inventory
 var key_count = 0;
 var gem_count = 0;
+var heart_count = 0;
 
 // Interaction
 
@@ -35,11 +36,21 @@ function key_pressed_down(event) {
         }
     }
     // Here is where the pickup conditional must be added, if key is present add 1 to inventory before moving character
-    /* if occupants[key_place.y][key_place.x] {
+    if (occupants[key_place.y][key_place.x]) {
     	key_count = key_count + 1;
-    } */
+    	document.getElementById("keys").innerHTML = key_count;
+    }
+    if (occupants[gem_place.y][gem_place.x]){
+    	gem_count += 1;
+    	document.getElementById("gems").innerHTML = gem_count;
+    }
+    if (occupants[heart_place.x][heart_place.y]){
+    	heart_count+=1;
+    	document.getElementById("hearts").innerHTML = heart_count;
+    }
     occupants[protagonist.y][protagonist.x] = protagonist.element;
     render();
+    
 }
 
 document.addEventListener('keydown', key_pressed_down);
