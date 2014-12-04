@@ -42,8 +42,14 @@ function key_pressed_down(event) {
     render();
 }
 
-function select_character(event) {
-	
+function select_character(selection) {
+	protagonist.element = selection;
+	render();
 }
 document.addEventListener('keydown', key_pressed_down);
-chr_cat_girl.addEventListener('click',select_character);
+chr_cat_girl.addEventListener('click',select_character(chr_cat_girl));
+chr_boy.addEventListener('click',select_character(chr_boy));
+chr_horn_girl.addEventListener('click',select_character(chr_horn_girl));
+chr_princess_girl.addEventListener('click',select_character(chr_princess_girl));
+chr_pink_girl.addEventListener('click',select_character(chr_pink_girl));
+
