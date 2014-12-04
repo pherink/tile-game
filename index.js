@@ -35,16 +35,16 @@ function key_pressed_down(event) {
             protagonist.y = protagonist.y + 1;
         }
     }
-    // Here is where the pickup conditional must be added, if key is present add 1 to inventory before moving character
+    
     if ([protagonist.x]===[key_place.x]&&[protagonist.y]===[key_place.y]) {
     	key_count = key_count + 1;
     	document.getElementById("keys").innerHTML = key_count+" keys";
     }
-    if ([protagonist.x]===[key_place.x]&&[protagonist.y]===[key_place.y]){
+    if ([protagonist.x]===[gem_place.x]&&[protagonist.y]===[gem_place.y]){
     	gem_count += 1;
     	document.getElementById("gems").innerHTML = gem_count+" hearts";
     }
-    if ([protagonist.x]===[key_place.x]&&[protagonist.y]===[key_place.y]){
+    if (0===[heart_place.x]&&0===[heart_place.y]){
     	heart_count+=1;
     	document.getElementById("hearts").innerHTML = heart_count+" hearts";
     }
