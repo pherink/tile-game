@@ -57,12 +57,6 @@ function key_pressed_down(event) {
 function select_cat_girl() {
 	var protagonist = document.getElementById('chr_cat_girl');
 
-function select_character(selection) {
-	protagonist.element = selection;
->>>>>>> bc5fdfd another crack at getting character selection to work
-	render();
-}
-
 function select_boy() {
 	var protagonist = document.getElementById('chr_boy');
 	render();
