@@ -53,30 +53,36 @@ function key_pressed_down(event) {
     
 }
 
-function select_cat_girl(selection) {
+
+function select_cat_girl() {
 	var protagonist = document.getElementById('chr_cat_girl');
+
+function select_character(selection) {
+	protagonist.element = selection;
+>>>>>>> bc5fdfd another crack at getting character selection to work
 	render();
 }
-function boy(selection) {
+
+function select_boy() {
 	var protagonist = document.getElementById('chr_boy');
 	render();
 }
-function select_horn_girl(selection) {
+function select_horn_girl() {
 	var protagonist = document.getElementById('chr_horn_girl');
 	render();
 }
-function select_princess_girl(selection) {
+function select_princess_girl() {
 	var protagonist = document.getElementById('chr_princess_girl');
 	render();
 }
-function select_pink_girl(selection) {
+function select_pink_girl() {
 	var protagonist = document.getElementById('chr_pink_girl');
 	render();
 }
-document.addEventListener('keydown', key_pressed_down()));
+document.addEventListener('keydown', key_pressed_down());
 chr_cat_girl.addEventListener('click',select_cat_girl());
-chr_boy.addEventListener('click',boy());
+chr_boy.addEventListener('click',select_boy());
 chr_horn_girl.addEventListener('click',select_horn_girl());
-chr_princess_girl.addEventListener('click',select_princess_girl())
+chr_princess_girl.addEventListener('click',select_princess_girl());
 chr_pink_girl.addEventListener('click',select_pink_girl());
 
