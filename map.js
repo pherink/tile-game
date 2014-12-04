@@ -14,10 +14,10 @@ var terrain = [
 ];
 var occupants = [
     [heart, enemy, undefined, wall, gem],
-    [enemy, key, undefined, undefined, door_closed],
+    [enemy, key, undefined, undefined, closed_door],
     [undefined, undefined, cat_girl, undefined, undefined],
     [undefined, undefined, undefined, undefined, undefined],
-    [selector, undefined, undefined, undefined, undefined],
+    [selector, undefined, undefined, undefined, star],
 ];
 var protagonist = {
     element: cat_girl,
@@ -57,8 +57,8 @@ var enemy_2_place = {
 
 var star_place = {
 	element: star,
-	x: 0,
-	y: 0,
+	x: 4,
+	y: 4,
 };
 
 var heart_place = {
