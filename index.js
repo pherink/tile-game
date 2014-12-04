@@ -42,4 +42,8 @@ function key_pressed_down(event) {
     render();
 }
 
+function select_character(event) {
+	
+}
 document.addEventListener('keydown', key_pressed_down);
+chr_cat_girl.addEventListener('click',select_character);
