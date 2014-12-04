@@ -34,19 +34,25 @@ var key_place = {
 var selector_place = {
 	element: selector,
 	x: 0,
-	y: 1,
+	y: 4,
 };
 
 var gem_place = {
 	element: gem,
-	x: 3,
-	y: 3,
+	x: 4,
+	y: 0,
 };
 
-var enemy_place = {
+var enemy_1_place = {
 	element: enemy,
 	x: 0,
-	y: 4,
+	y: 1,
+};
+
+var enemy_2_place = {
+	element: enemy,
+	x: 1,
+	y: 0,
 };
 
 var star_place = {
@@ -57,7 +63,19 @@ var star_place = {
 
 var heart_place = {
 	element: heart,
+	x: 0,
+	y: 0,
+};
+
+var door_place = {
+	element: closed_door,
 	x: 4,
+	y: 1,
+};
+
+var wall_place = {
+	element: wall,
+	x: 3,
 	y: 0,
 };
 
