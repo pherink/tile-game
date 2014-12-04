@@ -13,11 +13,11 @@ var terrain = [
     [[grass], [grass], [grass], [grass], [grass]],
 ];
 var occupants = [
-    [star, undefined, undefined, undefined, heart],
-    [selector, key, undefined, undefined, undefined],
+    [heart, enemy, undefined, wall, gem],
+    [enemy, key, undefined, undefined, door_closed],
     [undefined, undefined, cat_girl, undefined, undefined],
-    [undefined, undefined, undefined, gem, undefined],
-    [enemy, undefined, undefined, undefined, undefined],
+    [undefined, undefined, undefined, undefined, undefined],
+    [selector, undefined, undefined, undefined, undefined],
 ];
 var protagonist = {
     element: cat_girl,
